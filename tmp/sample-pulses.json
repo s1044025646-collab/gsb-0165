@@ -1,0 +1,7 @@
+[
+  { "startTime": 0, "endTime": 60, "currentA": 0 },
+  { "startTime": 60, "endTime": 120, "currentA": 2 },
+  { "startTime": 120, "endTime": 240, "currentA": 0 },
+  { "startTime": 240, "endTime": 300, "currentA": -2 },
+  { "startTime": 300, "endTime": 420, "currentA": 0 }
+]
