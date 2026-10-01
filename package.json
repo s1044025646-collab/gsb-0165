@@ -1,0 +1,18 @@
+{
+  "name": "battery-thevenin-backend",
+  "version": "1.0.0",
+  "description": "恒温单RC支路Thevenin电池模型：脉冲响应仿真与R0/R1/tau参数辨识（仅简化电学模型，API+CLI+SQLite）",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "cli": "node src/cli.ts",
+    "test": "node --test --experimental-strip-types test/engine.test.ts test/fit.test.ts test/store.test.ts test/api.test.ts",
+    "demo": "node scripts/demo.ts",
+    "stop": "node scripts/stop.ts"
+  },
+  "license": "MIT"
+}
