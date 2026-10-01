@@ -1,0 +1,23 @@
+{
+  "name": "battery-thevenin-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Local single-RC Thevenin battery equivalent-circuit pulse response, simulation and parameter identification backend (API + CLI). Simplified electrical model only.",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "test": "node --no-warnings=ExperimentalWarning --import tsx --test test/*.test.ts",
+    "cli": "tsx src/cli.ts",
+    "serve": "tsx src/cli.ts serve",
+    "demo": "tsx src/cli.ts demo",
+    "clean": "node --no-warnings=ExperimentalWarning --import tsx scripts/clean.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
